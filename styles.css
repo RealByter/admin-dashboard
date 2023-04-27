@@ -26,10 +26,6 @@ main {
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.25);
 }
 
-.sidebar {
-	grid-area: sidebar;
-}
-
 .main {
 	grid-area: main;
 }
@@ -42,6 +38,11 @@ main {
 .flex-row-wrapper {
 	display: flex;
   align-items: center;
+}
+
+.flex-column-wrapper {
+  display: flex;
+  flex-direction: column;
 }
 
 .pfp {
@@ -113,5 +114,40 @@ main {
 }
 
 .action-button:hover {
+  cursor: pointer;
+}
+
+.sidebar {
+	grid-area: sidebar;
+  color: white;
+  background-color: #1992d4;
+  padding: 1rem;
+  gap: 2rem;
+}
+
+.title {
+  font-size: 1.75rem;
+  font-weight: 700;
+  vertical-align: middle;
+}
+
+.title .iconify {
+  height: 2.5rem;
+  width: 2.5rem;
+  margin-right: 0.25rem;
+}
+
+.sidebar ul {
+  gap: 0.75rem;
+}
+
+.sidebar ul li {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  font-weight: 500;
+}
+
+.sidebar ul li:hover {
   cursor: pointer;
 }
